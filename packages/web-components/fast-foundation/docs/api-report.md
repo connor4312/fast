@@ -125,7 +125,7 @@ export class AnchoredRegion extends FoundationElement {
     }
 
 // @beta
-export type AnchoredRegionPositionLabel = "start" | "insetStart" | "insetEnd" | "end";
+export type AnchoredRegionPositionLabel = "start" | "insetStart" | "insetEnd" | "end" | "center";
 
 // @beta
 export const anchoredRegionTemplate: (context: ElementDefinitionContext, definition: FoundationElementDefinition) => ViewTemplate<AnchoredRegion>;
@@ -1101,7 +1101,7 @@ export const getDirection: (rootNode: HTMLElement) => Direction;
 export const hidden = ":host([hidden]){display:none}";
 
 // @beta
-export type HorizontalPosition = "start" | "end" | "left" | "right" | "unset";
+export type HorizontalPosition = "start" | "end" | "left" | "right" | "center" | "unset";
 
 // @public
 export class HorizontalScroll extends FoundationElement {
@@ -2404,7 +2404,7 @@ export const treeViewTemplate: (context: ElementDefinitionContext, definition: F
 export function validateKey(key: any): void;
 
 // @beta
-export type VerticalPosition = "top" | "bottom" | "unset";
+export type VerticalPosition = "top" | "bottom" | "center" | "unset";
 
 // @public
 export function whitespaceFilter(value: Node, index: number, array: Node[]): boolean;
